@@ -10,4 +10,5 @@ appRouter.post('/addPosts',postsController.ADD_POSTS);
 appRouter.post('/postImage',imageController.ADD_POST_IMAGES);
 appRouter.post('/getPosts',postsController.GET_POST);
 appRouter.post('/createUser',userController.CREATE_USER);
+appRouter.post('/updateProfile',userController.UPDATE_USER);
 module.exports =appRouter;
