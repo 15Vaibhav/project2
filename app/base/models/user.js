@@ -43,20 +43,24 @@ var userSchema = new Schema({
     numberOfPost :{
         type:Number
     },
-    followers:[{
-        name:{
+    followers:{
+        type:Number
+    },
+    following:{
+        type:Number
+    },
+
+    followersList:[{
+        userName:{
+            type:String
+        },
+        profileImage:{
             type:String
         },
         userId:{
             type:String
-        },
-        profileUrl:{
-            type:String
-        },
+        }
     }],
-    following:{
-        type:Number
-    },
     rating:{
         type:Number
     },
